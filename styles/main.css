@@ -1,0 +1,293 @@
+/*
+Author: Gary Hoerr Jr.
+CSS for the Four Horsemen of Wholesomeness
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font: 1em/1.5em Baskerville, serif;
+}
+
+
+/* Myriad Pro Font */
+@font-face{
+    font-family: "myriadpro";
+    src: url("/fonts/MyriadPro-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face{
+    font-family: "myriadpro";
+    src: url("/fonts/MyriadPro-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "myriadpro";
+    src: url("/fonts/MyriadPro-Semibold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face{
+    font-family: "myriadpro";
+    src: url("/fonts/MyriadPro-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+/* Myriad Pro Font */
+
+
+header {
+    background-color: white;
+}
+
+header h1{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 300%;
+    margin-bottom: .5em;
+    border-bottom: 3px solid black;
+    font-family: myriadpro;
+    font-weight: bold;
+}
+
+nav {
+    margin-top:-.4em;
+    background-color: cadetblue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+}
+
+ul {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    background-color: cadetblue;
+    list-style: none;
+    min-width: 300px;
+}
+
+nav ul li {
+    border-right: 2px solid black;
+    padding: 0 .5em;
+    line-height: 2em;
+    
+}
+
+nav ul li ul li img {
+    margin: auto;
+    padding: 0;
+    float: left;
+    margin-left: 1em;
+}
+
+nav ul li ul li {
+    border: none;
+    clear: left;
+    padding: 0.75em 0;
+}
+
+nav > ul > li {
+    float: left;
+    position: relative;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    width: 18em;
+    top: 100%;
+    left: 0;
+}
+
+nav > ul::after {
+    content:"";
+    display:block;
+    clear: both;
+}
+
+nav ul li:hover > ul, nav ul li:focus > ul {
+    display: block;
+}
+
+nav ul ul ul {
+    top: 8.5em;
+    left: 100%;
+    width: 21em;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul li:last-of-type {
+    border:none;
+}
+
+li a {
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+    font-family: myriadpro;
+    font-weight: 600;
+}
+
+li a sup {
+    font-family: myriadpro;
+    font-weight: 400;
+    font-size: 75%;
+}
+
+li a:visited {
+    color: lightgray;
+}
+
+li a:hover, li a:focus {
+    color: purple;
+    /*font-weight: bold;*/
+}
+
+
+
+body {
+    background-color: lightblue;
+}
+
+main {
+    background-color: lightblue;
+}
+
+section {
+    background-color: whitesmoke;
+    width: 80%;
+    margin: auto;
+    clear: both;
+    padding: 1em;
+    margin-bottom: 3em;
+    border-radius: 0.2em;
+    /*border-bottom: 1px solid black;*/
+}
+
+section::after {
+    content: '';
+    display: block;
+    clear:both;
+}
+
+section h2 {
+    font-family: myriadpro;
+    font-weight: 600;
+    font-size: 250%;
+    /*
+    border-bottom: 2px solid black;
+    margin-bottom: 0.2em;*/
+}
+
+section p {
+    margin-bottom: .5em;
+    font-family: myriadpro;
+    font-weight: 400;
+}
+
+section img {
+    float: right;
+    width: 20em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px solid darkgrey;
+    border-radius: 0.15em;
+}
+
+section#levarSec img {
+    width: 15em;
+}
+/*
+section#levarSec img,
+section#bobSec img {
+
+}*/
+
+#mobile_menu {
+    display: none;
+}
+
+@media only screen and (max-width: 764px) {
+    #mobile_menu {
+        display: block;
+    }
+
+    /* Tier 1 Menu */
+    .slicknav_nav ul li {
+        text-align: center;
+        float: none !important;
+    }
+
+    .slicknav_nav .slicknav_item a {
+        font-size: 1em;
+    }
+
+    .slicknav_nav ul {
+        list-style: none;
+        /* overflow: hidden; */
+        overflow: visible !important;
+        padding: 0;
+        margin: 0 0 0 20px;
+        /*z-index: 10;*/
+        
+    }
+
+        
+    .slicknav_menu a {
+        background-color: cadetblue !important;
+    }
+
+    .slicknav_menu {
+        background-color: cadetblue !important;
+    }
+
+    .slicknav_menu ul {
+        display: grid !important;
+        width: 35%;
+        position: absolute;
+        right: 0;
+    }
+
+    .slicknav_menu ul li ul {
+        margin: 0;
+        width: 100% ;
+        position: absolute;
+        top: auto;
+        left: 0;
+    }
+
+
+    .slicknav_collapsed ul {
+        display: none !important;
+    }
+
+
+    #nav_menu {
+        display: none;
+    }
+
+    nav ul ul {
+        width: 18em;
+        /*top: 75%;*/
+        right: 0;
+        z-index: 5;
+    } 
+
+    #bobSec {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bobSec img {
+        margin: auto;
+        max-width: 500px;
+        width: 100%;
+    }
+}
