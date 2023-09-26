@@ -1,0 +1,6 @@
+@RD /S ".git"
+@RD /S /Q ".vscode"
+@RD /S /Q "templates"
+Del ".gitignore"
+Del "README.md"
+Del "tidyup.bat"
