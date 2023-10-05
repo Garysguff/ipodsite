@@ -54,7 +54,6 @@ header h1{
 
 nav {
     margin-top:-.4em;
-    background-color: cadetblue;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -65,16 +64,21 @@ ul {
     display: table;
     margin: 0 auto;
     text-align: center;
-    background-color: cadetblue;
+    background-color: gray;
+    border-radius: 0.3em;
     list-style: none;
     min-width: 300px;
 }
 
 nav ul li {
-    border-right: 2px solid black;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid gray;
+    border-left: 2px solid rgb(185, 185, 185);
+    border-top: 2px solid rgb(185, 185, 185);
+    background-color: darkgrey;
+    border-radius: 0.2em;
     padding: 0 .5em;
     line-height: 2em;
-    
 }
 
 nav ul li ul li img {
@@ -82,13 +86,16 @@ nav ul li ul li img {
     padding: 0;
     float: left;
     margin-left: 1em;
+    width: 15%;
 }
 
 nav ul li ul li {
-    border: none;
+    
     clear: left;
     padding: 0.75em 0;
 }
+
+
 
 nav > ul > li {
     float: left;
@@ -98,9 +105,14 @@ nav > ul > li {
 nav ul ul {
     display: none;
     position: absolute;
-    width: 18em;
+    margin-top: 0.1em;
     top: 100%;
     left: 0;
+    min-width: 100%;
+}
+
+nav ul ul a {
+    font-size: 175%;
 }
 
 nav > ul::after {
@@ -123,9 +135,6 @@ nav ul ul li {
     display: block;
 }
 
-nav ul li:last-of-type {
-    border:none;
-}
 
 li a {
     font-size: 2em;
@@ -153,11 +162,11 @@ li a:hover, li a:focus {
 
 
 body {
-    background-color: lightblue;
+    background-color: rgb(255, 255, 255);
 }
 
 main {
-    background-color: lightblue;
+    background-color: rgb(255, 255, 255);
 }
 
 section {
@@ -194,10 +203,9 @@ section p {
 
 section img {
     float: right;
-    width: 20em;
+    width: 35%;
     margin-left: 0.5em;
     margin-bottom: 0.5em;
-    border: 1px solid darkgrey;
     border-radius: 0.15em;
 }
 
@@ -214,7 +222,7 @@ section#bobSec img {
     display: none;
 }
 
-@media only screen and (max-width: 764px) {
+@media only screen and (max-width: 950px) {
     #mobile_menu {
         display: block;
     }
