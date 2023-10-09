@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" type="text/css" href="/styles/main.css">
+        <link rel="stylesheet" type="text/css" href="/styles/form.css">
         <link rel="stylesheet" type="text/css" href="/styles/slicknav.css">
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -74,12 +75,62 @@
 
         <main>
             <section id="mainSec">
-                <h1>The iPod Guidebook</h1>
-                <img src="/images/mainimage.png" alt="A First Generation iPod Classic" style="order: 2;">
-                <p style="order: 1;">
-                The iManual is the one-stop shop for detailed spec sheets on every model of iPod including links to repair guides and replacement parts.
-                </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9cLnh-fX9k8?si=m9FbTrA9UBQ9KA9H&amp;start=18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h1>Register</h1>
+                <figure>
+                    <figcaption>Become a member of the iManual</figcaption>
+                    <form id="" action="#" method="post">
+                        <fieldset>
+                            <legend> Personal Information: </legend>
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" name="fname"><br>
+    
+                            <label for="lname">Last Name:</label>
+                            <input type="text" id="lname" name="lname"><br>
+    
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" required pattern="^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$"><br>
+    
+                            <label for="pword">Password:</label>
+                            <input type="password" id="pword" name="pword" placeholder="Enter your password" required><br>
+    
+                            
+                        </fieldset>
+    
+                        <fieldset>
+                            <legend>Which iPods do you own?</legend>
+    
+                            <label for="classic">iPod classic</label>
+                            <input type="checkbox" id="classic" name="classic">
+    
+                            <label for="nano">iPod Nano</label>
+                            <input type="checkbox" id="nano" name="nano">
+    
+                            <label for="touch">iPod touch</label>
+                            <input type="checkbox" id="touch" name="touch">
+    
+                            <label for="shuffle">iPod shuffle</label>
+                            <input type="checkbox" id="shuffle" name="shuffle">
+    
+                            <label for="mini">iPod mini</label>
+                            <input type="checkbox" id="mini" name="mini">
+                        </fieldset>
+    
+                        <fieldset>
+                            <legend>Would you like to recieve News and Offers?</legend>
+    
+                            <label for="Yes">Yes</label>
+                            <input type="radio" id="yes" name="spam">
+    
+                            <label for="no">No</label>
+                            <input type="radio" id="no" name="spam">
+                        </fieldset>
+    
+                        <fieldset id="butts">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Clear Form">
+                        </fieldset>
+                    </form>
+                </figure>
             </section>
             
             <aside></aside>

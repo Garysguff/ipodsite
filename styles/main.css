@@ -41,7 +41,7 @@ header {
     background-color: white;
 }
 
-header h1{
+header h2{
     width: 80%;
     margin: auto;
     text-align: center;
@@ -58,6 +58,10 @@ nav {
     margin-right: auto;
     width: 100%;
     
+}
+
+#tier1 {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.324);
 }
 
 ul {
@@ -186,7 +190,7 @@ section::after {
     clear:both;
 }
 
-section h2 {
+section h1 {
     font-family: myriadpro;
     font-weight: 600;
     font-size: 250%;
@@ -194,11 +198,21 @@ section h2 {
     border-bottom: 2px solid black;
     margin-bottom: 0.2em;*/
 }
+section h3 {
+    font-family: myriadpro;
+    font-weight: 600;
+    font-size: 200%;
+}
 
 section p {
     margin-bottom: .5em;
     font-family: myriadpro;
     font-weight: 400;
+}
+
+section iframe {
+    margin: 1em 0;
+    clear: both;
 }
 
 section img {
@@ -218,11 +232,15 @@ section#bobSec img {
 
 }*/
 
+footer p {
+    margin: 0 2em;
+}
+
 #mobile_menu {
     display: none;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1187px) {
     #mobile_menu {
         display: block;
     }
@@ -276,6 +294,11 @@ section#bobSec img {
         display: none !important;
     }
 
+
+    iframe {
+        width: 280px;
+        height: 157.5px;
+    }
 
     #nav_menu {
         display: none;

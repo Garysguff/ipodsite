@@ -1,0 +1,134 @@
+/* CSS for Forms 
+Author: Gary Hoerr Jr.
+*/
+
+/* Myriad Pro Font */
+@font-face{
+    font-family: "myriadpro";
+    src: url("/fonts/MyriadPro-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face{
+    font-family: "myriadpro";
+    src: url("/fonts/MyriadPro-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "myriadpro";
+    src: url("/fonts/MyriadPro-Semibold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face{
+    font-family: "myriadpro";
+    src: url("/fonts/MyriadPro-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+/* Myriad Pro Font */
+
+figcaption {
+    font-family: myriadpro;
+    margin-bottom: 1em;
+}
+
+section {
+    border: none;
+    margin-top: 2em;
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.35);
+    max-width: 800px;
+}
+
+* {
+    /*border: 1px solid green;*/
+}
+
+form {
+    display: block;
+    border: 2px solid black;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+label {
+    display: inline-block;
+    font-family: myriadpro;
+    padding: .2em;
+    margin: .2em;
+    width: 7em;
+    text-align: right;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 160%;
+    font-family: myriadpro;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+}
+
+fieldset:first-of-type {
+    column-count: 2;
+}
+
+fieldset:nth-of-type(2), fieldset:nth-of-type(3) {
+    width: 49%;
+    max-width: 469px;
+}
+
+fieldset:nth-of-type(2) {
+    float: left;
+    column-count: 3;
+}
+
+
+fieldset:nth-of-type(2) label {
+    width: 5em;
+}
+
+fieldset:nth-of-type(4) {
+    clear: both;
+    width: 85%;
+}
+
+fieldset:nth-of-type(4) legend {
+    margin: 0;
+}
+
+fieldset:nth-of-type(4) label:first-of-type {
+    width: 4em;
+}
+
+fieldset:nth-of-type(4) label:nth-of-type(n3) {
+    clear: right;
+}
+
+#butts {
+    margin: auto;
+    margin-top: 2em;
+    width: 80%;
+}
+
+#butts input {
+    width: 8em;
+    height: 2em;
+    font-family: myriadpro;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 2em;
+    
+    border-right: 2px solid gray;
+    border-bottom: 2px solid gray;
+    border-left: 2px solid rgb(185, 185, 185);
+    border-top: 2px solid rgb(185, 185, 185);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.324);
+    background-color: lightblue;
+    border-radius: 0.2em;
+    padding: 0 .5em;
+    line-height: 2em;
+}
